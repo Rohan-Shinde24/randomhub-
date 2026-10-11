@@ -5,6 +5,7 @@ import { SpinCountDisplay } from "@/components/spin-count-display";
 export const metadata: Metadata = {
   title: "Spin Count",
   description: "See how many times the RandomHub wheel has been spun in this browser.",
+  robots: { index: false, follow: true },
 };
 
 export default function CountPage() {

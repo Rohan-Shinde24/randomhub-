@@ -110,7 +110,7 @@ export function NameWheel({
     <section className="wheel-stage" aria-label="Random name spin wheel">
       <div className="wheel-heading">
         <div>
-          <span className="eyebrow"><Sparkles size={14} /> SPIN THE WHEEL</span>
+          <span className="eyebrow"><Sparkles size={10} /> SPIN THE WHEEL</span>
         </div>
         <span className="entry-total">{names.length} entries</span>
       </div>

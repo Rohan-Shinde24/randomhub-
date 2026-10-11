@@ -136,6 +136,7 @@ export default function RandomizerWorkspace() {
         </a>
 
         <nav aria-label="Footer navigation" className="footer-links  te">
+          <a className="text-xl" href="/how-to-use">How to use</a>
           <a  className="text-xl" href="/about">About</a>
           <a className="text-xl" href="/privacy-policy">Privacy Policy</a>
           <a className="text-xl " href="/terms">Terms</a>

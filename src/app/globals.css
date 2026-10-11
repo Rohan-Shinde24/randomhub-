@@ -129,7 +129,7 @@ button:disabled { cursor: not-allowed; }
 .wheel-heading .eyebrow { font-size: 9px; }
 .wheel-heading h2 { font-size: 25px; font-weight: 600; }
 .entry-total { color: #909a92; font-size: 10px; white-space: nowrap; }
-.wheel-area { position: relative; width: min(100%, 640px); aspect-ratio: 1; display: grid; place-items: center; margin: 14px auto 18px; }
+.wheel-area { position: relative; width: min(100%, 560px); aspect-ratio: 1; display: grid; place-items: center; margin: 14px auto 18px; }
 .name-wheel { position: relative; width: 100%; height: 100%; overflow: hidden; border: 8px solid #24322d; border-radius: 50%; box-shadow: 0 0 0 3px white, 0 0 0 5px #8c9a91, 0 14px 30px rgba(25, 39, 32, .2); transform: rotate(var(--wheel-turn)); transition: transform var(--wheel-speed) cubic-bezier(.1, .74, .13, 1); }
 .name-wheel.is-spinning { will-change: transform; }
 .wheel-pin { z-index: 2; position: absolute; top: -5px; left: calc(50% - 11px); width: 0; height: 0; border-right: 11px solid transparent; border-bottom: 0; border-left: 11px solid transparent; border-top: 23px solid var(--ink); filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .2)); }
@@ -201,8 +201,11 @@ button:disabled { cursor: not-allowed; }
 .info-summary { margin: 0; color: #68766e; font-size: 15px; line-height: 1.7; }
 .info-body { margin-top: 42px; padding-top: 25px; border-top: 1px solid var(--line); color: #58665e; font-size: 14px; line-height: 1.8; }
 .info-body h2 { margin: 24px 0 8px; color: var(--ink); font-family: Georgia, "Times New Roman", serif; font-size: 21px; font-weight: 400; }
+.info-body h3 { margin: 20px 0 7px; color: var(--ink); font-size: 16px; font-weight: 700; }
 .info-body h2:first-child { margin-top: 0; }
 .info-body p { max-width: 680px; margin: 0 0 16px; }
+.info-body ol, .info-body ul { max-width: 680px; margin: 0 0 18px; padding-left: 24px; }
+.info-body li { margin: 0 0 8px; padding-left: 4px; }
 .info-footer { margin-top: auto; }
 .spin-count-display { width: min(100%, 380px); display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 10px; padding: 30px 20px; border: 1px solid #dce4db; border-radius: 7px; background: linear-gradient(145deg, #f8faf5, #e8f0e8); text-align: center; }
 .spin-count-label { color: var(--green); font-size: 10px; font-weight: 750; letter-spacing: 1px; }

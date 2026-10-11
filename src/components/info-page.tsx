@@ -29,6 +29,7 @@ export function InfoPage({
       <footer className="page-footer info-footer">
         <Link className="brand footer-brand" href="/"><BrandMark /><span>random<span className="brand-accent">hub</span></span></Link>
         <nav aria-label="Legal and about" className="footer-links">
+          <a href="/how-to-use">How to use</a>
           <a href="/about">About</a>
           <a href="/privacy-policy">Privacy Policy</a>
           <a href="/terms">Terms</a>

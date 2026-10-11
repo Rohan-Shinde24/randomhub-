@@ -41,6 +41,7 @@ export function ToolNavigation({
       <nav className="top-navigation" aria-label="Main navigation">
         <a className="nav-current" href="#tools">Random tools</a>
         <span className="nav-divider" />
+        <a href="/how-to-use">How to use</a>
         <a href="/about">About</a>
         <div className="coming-tools" aria-label="More tools coming soon">
           <Wrench size={15} />
@@ -88,6 +89,7 @@ export function ToolNavigation({
             <p className="drawer-section-label drawer-coming-label"><Wrench size={14} /> MORE TOOLS <span className="soon-badge">Coming soon</span></p>
             <div className="drawer-upcoming"><span className="upcoming-icon">01</span><span>Coin flip</span></div>
             <div className="drawer-upcoming"><span className="upcoming-icon">02</span><span>Team maker</span></div>
+            <a className="drawer-footer-link" href="/how-to-use" onClick={() => setMenuOpen(false)}>How to use <span>Guide to the RandomHub tools</span></a>
             <a className="drawer-footer-link" href="/about" onClick={() => setMenuOpen(false)}>About RandomHub <span>Free, simple random tools</span></a>
             <p className="drawer-privacy"><span className="privacy-dot" /> Free &amp; private. Your names stay here.</p>
           </aside>
