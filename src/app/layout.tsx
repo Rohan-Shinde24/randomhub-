@@ -51,12 +51,13 @@ export const metadata: Metadata = {
       "Spin a name wheel, roll for a player, or draw a random winner with RandomHub.",
   },
   robots: { index: true, follow: true },
-  icons: {
-    icon: "/icon.png",
-    shortcut: "/icon.png",
-    apple: "/icon.png",
-  },
-
+ icons: {
+  icon: [
+    { url: "/icon.png", type: "image/png" },
+  ],
+  shortcut: "/icon.png",
+  apple: "/icon.png",
+},
 
 
 };
@@ -70,7 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "name": "Random Hub",
     "alternateName": ["RandomHub"],
     "url": "https://randomhub-ten.vercel.app",
-    "logo": "https://randomhub-ten.vercel.app/favicon.ico" // Tells Google what to use as a logo
+    "logo": "https://randomhub-ten.vercel.app/icon.png"// Tells Google what to use as a logo
   };
 
   return (
