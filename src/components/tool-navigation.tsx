@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Dices, Menu, Sparkles, Ticket, Wrench, X } from "lucide-react";
+import { BrandMark } from "@/components/brand-mark";
 
 export type ToolMode = "wheel" | "dice" | "lottery";
 
@@ -34,7 +35,7 @@ export function ToolNavigation({
   return (
     <header className="topbar">
       <a className="brand" href="#home" aria-label="RandomHub home">
-        <span className="brand-mark"><Sparkles size={19} /></span>
+        <BrandMark />
         <span>random<span className="brand-accent">hub</span></span>
       </a>
       <nav className="top-navigation" aria-label="Main navigation">
@@ -64,7 +65,7 @@ export function ToolNavigation({
           <aside aria-label="Mobile navigation" aria-modal="true" className="mobile-drawer-panel" id="mobile-tool-drawer" role="dialog">
             <div className="drawer-heading">
               <a className="brand" href="#home" onClick={() => setMenuOpen(false)}>
-                <span className="brand-mark"><Sparkles size={18} /></span>
+                <BrandMark />
                 <span>random<span className="brand-accent">hub</span></span>
               </a>
               <button aria-label="Close menu" className="drawer-close" onClick={() => setMenuOpen(false)} ref={closeButton} type="button"><X size={19} /></button>

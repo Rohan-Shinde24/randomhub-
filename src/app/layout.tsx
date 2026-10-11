@@ -44,12 +44,12 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   icons: {
-    icon: "/icon.ong",
+    icon: "/icon.png",
     shortcut: "/icon.png",
   },
 
 };
-  
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html

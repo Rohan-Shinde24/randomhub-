@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ArrowDownUp, Clock3, Dices, ListPlus, Sparkles, Ticket } from "lucide-react";
+import { BrandMark } from "@/components/brand-mark";
 import { DiceTool } from "@/components/dice-tool";
 import { LotteryTool } from "@/components/lottery-tool";
 import { NameEntry } from "@/components/name-entry";
@@ -128,9 +129,7 @@ export default function RandomizerWorkspace() {
       </section>
       <footer className="page-footer">
         <a className="brand footer-brand" href="#home" aria-label="RandomHub home">
-          <span className="brand-mark">
-            <Sparkles size={16} />
-          </span>
+          <BrandMark />
           <span>
             random<span className="brand-accent">hub</span>
           </span>
