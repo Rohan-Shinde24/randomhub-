@@ -44,7 +44,7 @@ button:disabled { cursor: not-allowed; }
 .page-shell { width: min(1420px, calc(100% - 48px)); margin: 0 auto; }
 .topbar { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 9px; color: var(--ink); font-size: 18px; font-weight: 750; letter-spacing: -.6px; text-decoration: none; white-space: nowrap; }
-.brand-mark { width: 31px; height: 31px; display: grid; place-items: center; border-radius: 9px; background: var(--green); color: white; }
+.brand-mark { width: 31px; height: 31px; display: grid; place-items: center; border-radius: 50%; background: var(--green); color: white; }
 .brand-accent { color: var(--coral); }
 .top-navigation { display: flex; align-items: center; gap: 26px; color: #67736d; font-size: 13px; }
 .top-navigation a { color: inherit; text-decoration: none; }
@@ -188,7 +188,7 @@ button:disabled { cursor: not-allowed; }
 .how-steps p { max-width: 225px; margin: 0; color: #cfdbd1; font-size: 12px; line-height: 1.65; }
 .page-footer { min-height: 66px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-top: 1px solid rgba(36, 50, 45, .1); color: #89938c; font-size: 10px; }
 .footer-brand { font-size: 13px; }
-.footer-brand .brand-mark { width: 25px; height: 25px; border-radius: 7px; }
+.footer-brand .brand-mark { width: 25px; height: 25px; border-radius: 50%; }
 .footer-links { display: flex; align-items: center; gap: 18px; }
 .footer-links a, .back-to-tools { color: #68766e; text-decoration: none; }
 .footer-links a:hover, .back-to-tools:hover { color: var(--green); }

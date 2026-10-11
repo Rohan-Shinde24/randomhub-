@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://randomhub-ten.vercel.app"),
   title: {
     default: "RandomHub - Free Name Picker, Spin Wheel & Dice Roller",
     template: "%s | RandomHub",
@@ -42,8 +43,13 @@ export const metadata: Metadata = {
       "Spin a name wheel, roll for a player, or draw a random winner with RandomHub.",
   },
   robots: { index: true, follow: true },
-};
+  icons: {
+    icon: "/icon.ong",
+    shortcut: "/icon.png",
+  },
 
+};
+  
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
