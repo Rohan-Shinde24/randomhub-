@@ -14,13 +14,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://randomhub-ten.vercel.app"),
+  applicationName: "Random Hub",
   title: {
-    default: "RandomHub - Free Name Picker, Spin Wheel & Dice Roller",
-    template: "%s | RandomHub",
+    default: "Free Spinner - Free Name Picker, Spin Wheel & Dice Roller",
+    template: "%s | Random Hub",
   },
   description:
     "Pick a random name in seconds. Spin a customizable name wheel, roll a name-assigned dice, or draw a lottery winner for classrooms, games, and giveaways.",
-  applicationName: "Random Hub",
+ 
   verification: {
   google: "izUUJnwgxDvS7f1bjy3eFPg6Cp-VL33vVzh6OPNM5fM",
 },
@@ -41,10 +42,11 @@ export const metadata: Metadata = {
       "A free name picker with a customizable spin wheel, player dice roller, and quick lottery draw.",
     siteName: "Random Hub",
     type: "website",
+    url: "https://randomhub-ten.vercel.app",
   },
   twitter: {
     card: "summary",
-    title: "RandomHub - Free Random Name Picker",
+    title: "Random Hub - Free Random Name Picker",
     description:
       "Spin a name wheel, roll for a player, or draw a random winner with RandomHub.",
   },
@@ -52,16 +54,37 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.png",
     shortcut: "/icon.png",
+    apple: "/icon.png",
   },
+
+
 
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+ 
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  // Google Structured Data for Site Name and Logo
+  const jsonLd = {
+    "@type": "WebSite",
+    "name": "Random Hub",
+    "alternateName": ["RandomHub"],
+    "url": "https://randomhub-ten.vercel.app",
+    "logo": "https://randomhub-ten.vercel.app/favicon.ico" // Tells Google what to use as a logo
+  };
+
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        {/* Injecting Schema directly into head */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
