@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   },
   description:
     "Pick a random name in seconds. Spin a customizable name wheel, roll a name-assigned dice, or draw a lottery winner for classrooms, games, and giveaways.",
+  verification: {
+  google: "izUUJnwgxDvS7f1bjy3eFPg6Cp-VL33vVzh6OPNM5fM",
+},
   keywords: [
     "random name picker",
     "spin the wheel",
@@ -27,6 +30,8 @@ export const metadata: Metadata = {
     "random picker",
     "online dice roller",
     "lottery name picker",
+    "online spinner",
+    "name spinner",
     "giveaway winner picker",
   ],
   openGraph: {
