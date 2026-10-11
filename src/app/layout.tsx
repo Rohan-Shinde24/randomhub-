@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   },
   description:
     "Pick a random name in seconds. Spin a customizable name wheel, roll a name-assigned dice, or draw a lottery winner for classrooms, games, and giveaways.",
+  applicationName: "Random Hub",
   verification: {
   google: "izUUJnwgxDvS7f1bjy3eFPg6Cp-VL33vVzh6OPNM5fM",
 },
@@ -35,10 +36,10 @@ export const metadata: Metadata = {
     "giveaway winner picker",
   ],
   openGraph: {
-    title: "RandomHub - Pick a Name, Roll the Dice, Make It Random",
+    title: "Random Hub - Pick a Name, Roll the Dice, Make It Random",
     description:
       "A free name picker with a customizable spin wheel, player dice roller, and quick lottery draw.",
-    siteName: "RandomHub",
+    siteName: "Random Hub",
     type: "website",
   },
   twitter: {
